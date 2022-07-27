@@ -12,22 +12,22 @@
     <!-------------------Navigation bar Start -------------- -->
     <header>
         <section>
-            <nav class="navbar navbar-expand-lg p-0">
-                <div class="container p-4">
-                  <a class="navbar-brand text-uppercase" href="#">Web Wonders</a>
+            <nav class="navbar fixed-top navbar-expand-lg text-bg-light p-3 mt-0 ">
+                <div class=" container ">
+                  <a class="navbar-brand text-uppercase" href="#home">Web Wonders</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item ms-auto">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link" href="#course">Courses</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Deals</a>
+                        <a class="nav-link" href="#deals">Deals</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Success</a>
@@ -46,8 +46,8 @@
         </section>
     <!-------------------Navigation bar End -------------- -->
     <!-- ----------------Images slider Start-------------  -->
-        <section>
-            <div class="container">
+        <section class="home">
+            <div class="container mt-5">
                 <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -82,7 +82,7 @@
     </header>
     <main>
     <!-----------------Course Section Start ---------------- -->
-       <section>
+       <section id="course">
         <div class="container mt-5">
             <h1 class="text-center">Discover Our Popular Courses</h1>
             <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>    
@@ -197,15 +197,53 @@
                             </div>                            
                         </div>
                         <button class="btn btn-primary text-white" type="submit">Read More</button>
-                    </div>
-                    
+                    </div>                   
                   </div>
                 </div>
               </div>
-
         </div>
     </section>
     <!-- --------------Exploring Section Start ---------------->
+    <!------------------- deals section Start--------------- -->
+    <section class="deals">
+         <div class="container rounded-2 bg-primary mt-5">
+         <div class="row py-5">
+            <div class="d-flex justify-content-end align-items-center ">
+                <div class="col-md-6">
+                    <h1 class="text-white fw-1">Ready to join?</h1>
+                    <p class="text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="col-md-6">
+                  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Register</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Now registration
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">                        
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <a class="btn btn-info text-white" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Register</a>
+              </div>
+            </div>
+         </div>
+         </div>
+    </section>
+    <!------------------- deals section End--------------- -->
 
     </main>
 
